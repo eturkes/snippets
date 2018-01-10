@@ -1,0 +1,16 @@
+FROM continuumio/anaconda3:5.0.1
+
+LABEL maintainer="Emir Turkes eturkes@bu.edu"
+
+RUN conda install -q -y python=3.5
+
+RUN apt-get update -q -y && apt-get install -q -y --no-install-recommends \
+    gcc \
+    g++ \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN pip install PyMICE
+
+RUN apt-get purge -q -y --auto-remove \
+    gcc \
+    g++
