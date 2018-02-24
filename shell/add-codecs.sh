@@ -1,9 +1,12 @@
 #!/bin/sh
 # This script updates and adds patent-encumbered codecs to openSUSE
 
-. /etc/os-release
-VER=$VERSION_ID
+VER=`lsb_release -r`
 
-sudo zypper up
+if [[ "$VER" == *"42.3" ]]; then
+    echo success
+fi
 
-if $VER
+#sudo zypper up
+
+#if $VER
