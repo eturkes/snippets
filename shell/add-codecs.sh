@@ -24,7 +24,7 @@ if [[ "$VER" == *"42.2" ]]; then
     reboot
 fi
 
-if [[ "$VER" == *"42.2" ]]; then
+if [[ "$VER" == *"42.3" ]]; then
     zypper ref
     zypper up
 
