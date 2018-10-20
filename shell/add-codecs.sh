@@ -15,10 +15,9 @@ if [[ "$VER" == *"42.2" ]]; then
     zypper ar -f http://packman.inode.at/suse/openSUSE_Leap_42.3/ packman
     zypper ar -f http://opensuse-guide.org/repo/openSUSE_Leap_42.3/ libdvdcss
     zypper ref
-    zypper in libdvdcss2 ffmpeg lame gstreamer-plugins-libav \
-        gstreamer-plugins-bad gstreamer-plugins-ugly \
-        gstreamer-plugins-ugly-orig-addon vlc vlc-codecs flash-player \
-        flash-player-ppapi libxine2 libxine2-codecs
+    zypper in libdvdcss2 ffmpeg lame gstreamer-plugins-libav gstreamer-plugins-bad \
+        gstreamer-plugins-ugly gstreamer-plugins-ugly-orig-addon vlc vlc-codecs \
+        flash-player flash-player-ppapi libxine2 libxine2-codecs
     zypper dup --from packman
 
     reboot
@@ -31,10 +30,9 @@ if [[ "$VER" == *"42.3" ]]; then
     zypper ar -f http://packman.inode.at/suse/openSUSE_Leap_42.3/ packman
     zypper ar -f http://opensuse-guide.org/repo/openSUSE_Leap_42.3/ libdvdcss
     zypper ref
-    zypper in libdvdcss2 ffmpeg lame gstreamer-plugins-libav \
-        gstreamer-plugins-bad gstreamer-plugins-ugly \
-        gstreamer-plugins-ugly-orig-addon vlc vlc-codecs flash-player \
-        flash-player-ppapi libxine2 libxine2-codecs
+    zypper in libdvdcss2 ffmpeg lame gstreamer-plugins-libav gstreamer-plugins-bad \
+        gstreamer-plugins-ugly gstreamer-plugins-ugly-orig-addon vlc vlc-codecs \
+        flash-player flash-player-ppapi libxine2 libxine2-codecs
     zypper dup --from packman
 
     reboot
