@@ -3,3 +3,5 @@ rat OR *rattus* OR *norvegic* OR *musculus* OR mouse OR muri* OR rodent* OR crea
 rat OR rattus OR norvegicus OR mus OR musculus OR mouse OR muridae OR rodent OR mice
 
 rat OR rats OR mouse OR mice OR rodent OR rodents
+
+RatSI CRIM13 MBADA SCORHE Dollár Dollar Jhuang Giancardo Salem Lorbach
