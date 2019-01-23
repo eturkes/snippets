@@ -1,1 +1,5 @@
 rat OR *rattus* OR *norvegic* OR *musculus* OR mouse OR muri* OR rodent* OR creature OR animal* OR vertebrat* OR mammal* OR in-vivo OR living-being OR organism* OR life-form OR forms-of-life OR endotherm OR warm-blood* OR warmblood* OR chordat* OR live-stock OR livestock OR wild-life OR wildlife OR pet
+
+rat OR rattus OR norvegicus OR mus OR musculus OR mouse OR muridae OR rodent OR mice
+
+rat OR rats OR mouse OR mice OR rodent OR rodents
