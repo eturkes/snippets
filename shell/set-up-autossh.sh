@@ -8,7 +8,9 @@
 
 sudo apt install -y autossh
 
+useradd -m -s /sbin/nologin autossh
 sudo su - autossh -s /bin/bash
+
 ssh-keygen -t ed25519
 ssh-copy-id $2 -p $3
 
