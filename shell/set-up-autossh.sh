@@ -6,6 +6,9 @@
 # $3 is the host's SSH port
 
 sudo apt install -y openssh-server autossh
+sudo sed -i 's/Port\ 22/Port\ 9991/g' /etc/ssh/sshd_config
+sudo ufw enable
+sudo ufw allow 9991/tcp
 sudo useradd -m -s /sbin/nologin autossh
 sudo -H -u autossh -s bash -c 'ssh-keygen -t ed25519'
 sudo -H -u autossh -s bash -c "ssh-copy-id $1 -p $2"
