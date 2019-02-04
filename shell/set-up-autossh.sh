@@ -16,4 +16,4 @@ sudo -H -u autossh -s bash -c 'ssh-keygen -t ed25519'
 sudo -H -u autossh -s bash -c "ssh-copy-id $1 -p $2"
 
 cron_string="@reboot /bin/sudo -u autossh bash -c '/usr/local/bin/autossh -M 0 -f autossh@$1 -p $2 -N -o 'ExitOnForwardFailure=yes' -o 'ServerAliveInterval 60' -o 'ServerAliveCountMax 3' -R $3:localhost:$2'"
-sudo (crontab -l 2>/dev/null; echo "$cron_string") | sudo crontab -
+sudo bash -c "(crontab -l 2>/dev/null; echo '$cron_string') | crontab -"
