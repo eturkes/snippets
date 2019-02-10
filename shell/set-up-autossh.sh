@@ -14,4 +14,4 @@ sudo apt install -y openssh-server autossh \
     && sudo useradd -m -s /sbin/nologin autossh \
     && sudo -H -u autossh -s bash -c 'ssh-keygen -t ed25519' \
     && sudo -H -u autossh -s bash -c "ssh-copy-id $1 -p $2" \
-    && sudo echo $cron_string > /etc/cron.d/autossh
+    && echo $cron_string | sudo tee /etc/cron.d/autossh
