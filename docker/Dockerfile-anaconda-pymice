@@ -1,6 +1,6 @@
 FROM continuumio/anaconda3:5.0.1
 
-LABEL maintainer="Emir Turkes eturkes@bu.edu"
+LABEL maintainer="Emir Turkes emir.turkes@eturkes.com"
 
 RUN conda install -q -y python=3.5
 
